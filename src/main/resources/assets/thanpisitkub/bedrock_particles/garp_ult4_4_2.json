@@ -1,0 +1,128 @@
+{
+ "name": "garp_ult4_4_2",
+ "additive": true,
+ "facing": "camera",
+ "frames": 5,
+ "flipbook": {
+  "fps": 12.0,
+  "max": 5,
+  "stretch": false,
+  "loop": true
+ },
+ "uv_random": false,
+ "emitter": {
+  "mode": "steady",
+  "rate": "100",
+  "count": "0",
+  "maxp": 100,
+  "active": 1
+ },
+ "shape": {
+  "type": "sphere",
+  "radius": "20",
+  "offset": [
+   "0",
+   "0",
+   "0"
+  ]
+ },
+ "speed": "v.particle_random_2*35",
+ "accel": [
+  "math.random(0,5)",
+  "math.random(0,5)",
+  "math.random(0,5)"
+ ],
+ "drag": "math.random(2,4)",
+ "lifetime": "math.random(0.5,2)",
+ "size": [
+  "v.particle_random_4*math.random(0.1,5)",
+  "v.particle_random_2*10 - v.particle_age*4"
+ ],
+ "tint": {
+  "mode": "grad",
+  "stops": [
+   [
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.05,
+    1.0,
+    1.0,
+    0.6157,
+    0.0
+   ],
+   [
+    0.13,
+    1.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.27,
+    1.0,
+    1.0,
+    0.7176,
+    0.0
+   ],
+   [
+    0.33,
+    1.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.5,
+    1.0,
+    1.0,
+    0.8431,
+    0.0
+   ],
+   [
+    0.57,
+    1.0,
+    1.0,
+    0.9569,
+    0.5804
+   ],
+   [
+    0.72,
+    1.0,
+    1.0,
+    0.749,
+    0.0
+   ],
+   [
+    0.81,
+    1.0,
+    1.0,
+    0.9922,
+    0.8667
+   ],
+   [
+    0.92,
+    1.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.99,
+    0.0,
+    1.0,
+    0.1333,
+    0.0
+   ]
+  ]
+ },
+ "spin": {
+  "rot": "v.particle_random_2*v.particle_random_4*360",
+  "rate": "0"
+ },
+ "curves": {}
+}

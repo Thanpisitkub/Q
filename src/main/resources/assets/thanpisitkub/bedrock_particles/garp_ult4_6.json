@@ -1,0 +1,109 @@
+{
+ "name": "garp_ult4_6",
+ "additive": true,
+ "facing": "camera",
+ "frames": 2,
+ "flipbook": {
+  "fps": 12.0,
+  "max": 2,
+  "stretch": true,
+  "loop": true
+ },
+ "uv_random": false,
+ "emitter": {
+  "mode": "steady",
+  "rate": "50",
+  "count": "0",
+  "maxp": 100,
+  "active": 1
+ },
+ "shape": {
+  "type": "point",
+  "radius": "0",
+  "offset": [
+   "0",
+   "0",
+   "0"
+  ]
+ },
+ "speed": "30",
+ "accel": [
+  "0",
+  "0",
+  "0"
+ ],
+ "drag": 4,
+ "lifetime": "math.random(1,2)",
+ "size": [
+  "v.size",
+  "v.size2"
+ ],
+ "tint": {
+  "mode": "grad",
+  "stops": [
+   [
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.33,
+    1.0,
+    1.0,
+    0.5451,
+    0.0
+   ],
+   [
+    0.5,
+    1.0,
+    0.8235,
+    0.0,
+    1.0
+   ],
+   [
+    0.67,
+    1.0,
+    1.0,
+    0.6431,
+    0.0
+   ],
+   [
+    1.0,
+    0.0,
+    1.0,
+    0.5569,
+    0.0
+   ]
+  ]
+ },
+ "spin": {
+  "rot": "math.random(-360,360)",
+  "rate": "0"
+ },
+ "curves": {
+  "size": {
+   "input": "v.particle_age",
+   "range": "v.particle_lifetime",
+   "nodes": [
+    0,
+    14.73,
+    5.29,
+    25.2,
+    0
+   ]
+  },
+  "size2": {
+   "input": "v.particle_age",
+   "range": "v.particle_lifetime",
+   "nodes": [
+    0,
+    11.6,
+    40.67,
+    57.93,
+    0
+   ]
+  }
+ }
+}

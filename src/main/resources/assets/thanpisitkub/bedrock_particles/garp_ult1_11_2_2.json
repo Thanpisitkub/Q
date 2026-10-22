@@ -1,0 +1,91 @@
+{
+ "name": "garp_ult1_11_2_2",
+ "additive": true,
+ "facing": "camera",
+ "frames": 2,
+ "flipbook": null,
+ "uv_random": true,
+ "emitter": {
+  "mode": "instant",
+  "count": "200",
+  "rate": "0",
+  "maxp": 1000,
+  "active": 1
+ },
+ "shape": {
+  "type": "sphere",
+  "radius": "0.1",
+  "offset": [
+   "0",
+   "0",
+   "0"
+  ]
+ },
+ "speed": "40",
+ "accel": [
+  "0",
+  "0",
+  "0"
+ ],
+ "drag": 1,
+ "lifetime": "math.random(1,4)",
+ "size": [
+  "v.size*v.particle_random_2",
+  "v.size*v.particle_random_2"
+ ],
+ "tint": {
+  "mode": "grad",
+  "stops": [
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.3373,
+    1.0
+   ],
+   [
+    0.14,
+    0.3216,
+    1.0,
+    0.5725,
+    0.8392
+   ],
+   [
+    0.33,
+    1.0,
+    0.4078,
+    0.6196,
+    1.0
+   ],
+   [
+    0.64,
+    1.0,
+    0.8275,
+    0.8824,
+    1.0
+   ],
+   [
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0
+   ]
+  ]
+ },
+ "spin": {
+  "rot": "math.random(-360,360)",
+  "rate": "0"
+ },
+ "curves": {
+  "size": {
+   "input": "v.particle_age",
+   "range": "v.particle_lifetime",
+   "nodes": [
+    0,
+    57.96,
+    56.13
+   ]
+  }
+ }
+}

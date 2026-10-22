@@ -1,0 +1,79 @@
+{
+ "name": "garp_ult1_9",
+ "additive": false,
+ "facing": "camera",
+ "frames": 10,
+ "flipbook": {
+  "fps": 12.0,
+  "max": 10,
+  "stretch": true,
+  "loop": false
+ },
+ "uv_random": false,
+ "emitter": {
+  "mode": "instant",
+  "count": "2",
+  "rate": "0",
+  "maxp": 1000,
+  "active": 1
+ },
+ "shape": {
+  "type": "point",
+  "radius": "0",
+  "offset": [
+   "0",
+   "7",
+   "0"
+  ]
+ },
+ "speed": "0",
+ "accel": [
+  "0",
+  "0",
+  "0"
+ ],
+ "drag": 0,
+ "lifetime": "math.random(0.5,2)",
+ "size": [
+  "20 + v.particle_age*30",
+  "15 + v.particle_age*10"
+ ],
+ "tint": {
+  "mode": "grad",
+  "stops": [
+   [
+    0.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   [
+    0.33,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   [
+    0.5,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   [
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0
+   ]
+  ]
+ },
+ "spin": {
+  "rot": "0",
+  "rate": "0"
+ },
+ "curves": {}
+}
